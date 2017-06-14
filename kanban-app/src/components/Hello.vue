@@ -81,12 +81,13 @@
           </div>
         </div>
         <!-- DONE -->
+
         <div class="col-md-3">
           <div class="row">
             <div class="col-sm-12">
               <div class="thumbnail">
                 <h1 style="background-color:green;">DONE</h1>
-                <div class="thumbnail-content" v-for="backlog in backlogs" v-if="backlog.status == 'done'">
+                <div class="thumbnail" v-for="backlog in backlogs" v-if="backlog.status == 'done'">
                   <div class="caption">
                     <div>
                       <h3><b>{{ backlog.title }}</b></h3>
